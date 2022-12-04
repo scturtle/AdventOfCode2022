@@ -20,7 +20,7 @@ fn day03() {
         .iter()
         .map(|r| {
             let (a, b) = r.split_at(r.len() / 2);
-            a.iter().filter(|t| b.contains(t)).next().unwrap()
+            a.iter().find(|t| b.contains(t)).unwrap()
         })
         .sum();
     dbg!(cnt1);
@@ -29,8 +29,7 @@ fn day03() {
         .chunks(3)
         .map(|g| {
             g[0].iter()
-                .filter(|t| g[1].contains(t) && g[2].contains(t))
-                .next()
+                .find(|t| g[1].contains(t) && g[2].contains(t))
                 .unwrap()
         })
         .sum();
