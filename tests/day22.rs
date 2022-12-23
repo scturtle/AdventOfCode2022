@@ -91,7 +91,6 @@ fn password(cur: (usize, usize), dir: Direction) -> usize {
 
 #[test]
 fn day22() {
-    // let txt = adventofcode2022::get_test_input().unwrap(); let width = 4;
     let txt = adventofcode2022::get_input(22).unwrap();
     let width = 50;
     let (map, inst_line) = txt.split_once("\n\n").unwrap();
