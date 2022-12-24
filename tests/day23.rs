@@ -62,7 +62,6 @@ fn step(elves: Vec<(i32, i32)>, round: usize) -> (bool, Vec<(i32, i32)>) {
 
 #[test]
 fn day23() {
-    // let txt = adventofcode2022::get_test_input().unwrap();
     let txt = adventofcode2022::get_input(23).unwrap();
     let elves0: Vec<(i32, i32)> = txt
         .lines()
